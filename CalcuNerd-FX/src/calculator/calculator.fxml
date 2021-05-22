@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="311.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.Calculator">
+   <children>
+      <SplitPane fx:id="window" dividerPositions="0.20351758793969849" layoutX="1.0" orientation="VERTICAL" prefHeight="410.0" prefWidth="309.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TextField fx:id="anzeige" alignment="CENTER_RIGHT" editable="false" layoutX="3.0" layoutY="1.0" prefHeight="76.0" prefWidth="302.0" text="0">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="32.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="314.0" prefWidth="304.0">
+               <children>
+                  <Button fx:id="eins" layoutY="162.0" mnemonicParsing="false" onAction="#getZahlen" prefHeight="76.0" prefWidth="77.0" text="1">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="vier" layoutY="86.0" mnemonicParsing="false" onAction="#getZahlen" prefHeight="76.0" prefWidth="77.0" text="4">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="34.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="zero" layoutY="238.0" mnemonicParsing="false" onAction="#getZahlen" prefHeight="76.0" prefWidth="77.0" text="0">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="34.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="resultat" layoutX="154.0" layoutY="238.0" mnemonicParsing="false" onAction="#getErgebnis" prefHeight="76.0" prefWidth="77.0" text="=">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="zwei" layoutX="77.0" layoutY="162.0" mnemonicParsing="false" onAction="#getZahlen" prefHeight="76.0" prefWidth="77.0" text="2">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="34.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="plus" defaultButton="true" layoutX="231.0" layoutY="10.0" mnemonicParsing="false" onAction="#getRechenart" prefHeight="76.0" prefWidth="77.0" text="+">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="fuenf" layoutX="77.0" layoutY="86.0" mnemonicParsing="false" onAction="#getZahlen" prefHeight="76.0" prefWidth="77.0" text="5">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="34.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sechs" layoutX="154.0" layoutY="86.0" mnemonicParsing="false" onAction="#getZahlen" prefHeight="76.0" prefWidth="77.0" text="6">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="34.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="minus" defaultButton="true" layoutX="231.0" layoutY="86.0" mnemonicParsing="false" onAction="#getRechenart" prefHeight="76.0" prefWidth="77.0" text="-">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="neun" layoutX="154.0" layoutY="10.0" mnemonicParsing="false" onAction="#getZahlen" prefHeight="76.0" prefWidth="77.0" text="9">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="34.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="mal" defaultButton="true" layoutX="231.0" layoutY="162.0" mnemonicParsing="false" onAction="#getRechenart" prefHeight="76.0" prefWidth="77.0" text="x">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="34.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="geteilt" defaultButton="true" layoutX="231.0" layoutY="238.0" mnemonicParsing="false" onAction="#getRechenart" prefHeight="76.0" prefWidth="77.0" text="/">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="34.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="punkt" layoutX="77.0" layoutY="238.0" mnemonicParsing="false" onAction="#getZahlen" prefHeight="76.0" prefWidth="77.0" text=".">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sieben" layoutY="10.0" mnemonicParsing="false" onAction="#getZahlen" prefHeight="76.0" prefWidth="77.0" text="7">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="34.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="acht" layoutX="77.0" layoutY="10.0" mnemonicParsing="false" onAction="#getZahlen" prefHeight="76.0" prefWidth="77.0" text="8">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="34.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="drei" layoutX="154.0" layoutY="162.0" mnemonicParsing="false" onAction="#getZahlen" prefHeight="76.0" prefWidth="77.0" text="3">
+                     <font>
+                        <Font name="Rockwell Bold Italic" size="34.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Button fx:id="reset" layoutX="1.0" layoutY="401.0" mnemonicParsing="false" onAction="#setReset" prefHeight="31.0" prefWidth="309.0" text="Reset">
+         <font>
+            <Font name="Rockwell Bold Italic" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
