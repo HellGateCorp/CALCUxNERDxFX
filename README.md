@@ -2,4 +2,4 @@
 
 # CALCUxNERDxFX
 
-A nice JavaFX based Calculator-GUI, who every smart modern Nerd@1337 should use ... :-D
+A nice JavaFX based Calculator Application, who every smart modern Nerd1337 should use ! :D
