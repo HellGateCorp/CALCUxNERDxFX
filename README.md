@@ -2,4 +2,4 @@
 
 # CALCUxNERDxFX
 
-A nice JavaFX based Calculator Application, who every smart modern Nerd1337 should use 🤓🧑🏼‍🎓🧠
+A nice JavaFX based Calculator Application, who every smart modern Nerd1337 should use 🧑🏼‍🎓🧠
